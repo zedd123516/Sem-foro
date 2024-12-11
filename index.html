@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="semaforo">
+        <div id="luz-rojo" class="luz"></div>
+        <div id="luz-amarillo" class="luz"></div>
+        <div id="luz-verde" class="luz"></div>
+    </div>
+    <div class="botones">
+        <button class="rojo" onclick="encenderLuz('rojo')">Rojo</button>
+        <button class="amarillo" onclick="encenderLuz('amarillo')">Amarillo</button>
+        <button class="verde" onclick="encenderLuz('verde')">Verde</button>
+    </div>
+
+    <script>
+        function encenderLuz(color) {
+            // Apagar todas las luces
+            document.getElementById('luz-rojo').style.backgroundColor = 'gray';
+            document.getElementById('luz-amarillo').style.backgroundColor = 'gray';
+            document.getElementById('luz-verde').style.backgroundColor = 'gray';
+
+            // Encender la luz correspondiente
+            if (color === 'rojo') {
+                document.getElementById('luz-rojo').style.backgroundColor = 'red';
+            } else if (color === 'amarillo') {
+                document.getElementById('luz-amarillo').style.backgroundColor = 'yellow';
+            } else if (color === 'verde') {
+                document.getElementById('luz-verde').style.backgroundColor = 'green';
+            }
+        }
+    </script>
+</body>
+</html>
