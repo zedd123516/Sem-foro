@@ -50,3 +50,16 @@ body {
     background-color: green;
     color: white;
 }
+
+.regresar {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.regresar {
+    background-color: floralwhite;
+}
